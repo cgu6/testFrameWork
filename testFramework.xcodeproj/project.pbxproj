@@ -14,6 +14,7 @@
 		A00788191B02FC8F00D5772F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00788181B02FC8F00D5772F /* Images.xcassets */; };
 		A007881C1B02FC8F00D5772F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A007881A1B02FC8F00D5772F /* LaunchScreen.xib */; };
 		A00788281B02FC8F00D5772F /* testFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A00788271B02FC8F00D5772F /* testFrameworkTests.m */; };
+		A00788C11B031B0B00D5772F /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00788C01B031B0B00D5772F /* AMapSearchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A00788211B02FC8F00D5772F /* testFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00788261B02FC8F00D5772F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A00788271B02FC8F00D5772F /* testFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testFrameworkTests.m; sourceTree = "<group>"; };
+		A00788C01B031B0B00D5772F /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00788C11B031B0B00D5772F /* AMapSearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		A007880A1B02FC8F00D5772F /* testFramework */ = {
 			isa = PBXGroup;
 			children = (
+				A00788C01B031B0B00D5772F /* AMapSearchKit.framework */,
 				A007880F1B02FC8F00D5772F /* AppDelegate.h */,
 				A00788101B02FC8F00D5772F /* AppDelegate.m */,
 				A00788121B02FC8F00D5772F /* ViewController.h */,
@@ -349,7 +353,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/testFramework",
+				);
 				INFOPLIST_FILE = testFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +369,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/testFramework",
+				);
 				INFOPLIST_FILE = testFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +434,7 @@
 				A007882D1B02FC8F00D5772F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A007882E1B02FC8F00D5772F /* Build configuration list for PBXNativeTarget "testFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				A00788301B02FC8F00D5772F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
